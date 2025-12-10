@@ -1,6 +1,7 @@
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using BepInEx;
+using BepInEx.Configuration;
 using HarmonyLib;
 
 namespace DisplayPiety;
@@ -16,10 +17,13 @@ public static class ModInfo
 internal class Plugin : BaseUnityPlugin
 {
     internal static Plugin? Instance;
+    internal ConfigEntry<bool>? ShowFaithValue;
 
     private void Awake()
     {
         Instance = this;
+        ShowFaithValue =
+            Config.Bind("General", "ShowFaithValue", true, "Show faith skill value.");
         Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly(), ModInfo.Guid);
     }
 

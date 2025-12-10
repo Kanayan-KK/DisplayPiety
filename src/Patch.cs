@@ -25,13 +25,18 @@ namespace DisplayPiety
                 if (EClass.pc == null)
                     return "-/-";
 
-                // 信仰心ステータス値
+                // 信仰心スキル値を取得
                 var piety = EClass.pc.Evalue(PIETY_ID);
 
-                // 信仰ステータス値
-                var faith = EClass.pc.Evalue(FAITH_ID);
+                if (Plugin.Instance != null && Plugin.Instance.ShowFaithValue != null &&
+                    Plugin.Instance.ShowFaithValue.Value)
+                {
+                    // 信仰スキル値を取得
+                    var faith = EClass.pc.Evalue(FAITH_ID);
+                    return $"{piety} / {faith}";
+                }
 
-                return $"{piety} / {faith}";
+                return $"{piety}";
             });
         }
     }
