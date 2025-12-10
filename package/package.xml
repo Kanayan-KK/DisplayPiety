@@ -6,8 +6,7 @@
     <loadPriority>100</loadPriority>
     <version>0.23.237</version>
     <tags>General,QoL</tags>
-    <description>
-    </description>
+    <description>DisplayPiety</description>
     <builtin>false</builtin>
     <visibility>Public</visibility>
 </Meta>
