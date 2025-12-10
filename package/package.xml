@@ -7,20 +7,21 @@
     <version>0.23.237</version>
     <tags>General,QoL</tags>
     <description>
-        隠しステータスである「信仰心」スキル値を表示します。
         情報バーの主能力に「信仰心/信仰」スキル値の表示を追加します。
         cfgファイルの修正で「信仰心」スキル値のみの表示にできます。
         cfgファイルの修正には「Mod Config GUI」の使用をおすすめします。
         [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3379819704] Mod Config GUI [/url]
+
+        [hr][/hr]
         
-        --------------------------------------------
-        Displays the hidden "Piety" skill value.
         Adds "Piety/Faith" skill value display to the main attributes in the info bar.
         You can change it to display only the "Piety" skill value by modifying the cfg file.
         It is recommended to use "Mod Config GUI" for modifying the cfg file.
         [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3379819704] Mod Config GUI [/url]
 
-        --------------------------------------------
+        [hr][/hr]
+        
+        [url=https://github.com/Kanayan-KK/DisplayPiety] SourceCode [/url]
         
     </description>
     <builtin>false</builtin>
